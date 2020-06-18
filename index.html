@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawana's Foods | Survey Form</title>
+    <!-- ========== FONTS ========== -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+    <!-- ============== Heading ============== -->
+    <h1 id="title">Tawana's Foods Customer Satisfaction Survey</h1>
+    <!-- ============== Description ============== -->
+    <p id="description">Thank you for taking the time to help us improve the quality of our service</p>
+    <!-- ============== Survey Form ============== -->
+    <form action="" id="survey-form">
+        <!-- === Name === -->
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name"><br>
+
+        <!-- === Email === -->
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email address" required><br>
+
+        <!-- === Phone Number === -->
+        <label for="phone-number" id="phone-number-label">Phone:</label>
+        <input type="tel" id="phone-number" placeholder="Enter your phone number" required><br>
+
+        <!-- === Number of shopping trips === -->
+
+        <div id="shopping-trips">
+            <p>How many times have you shopped with us?</p><br>
+        </div>
+
+        <input type="radio" name="shopping-trips" id="once" value="once">
+        <label for="once">Once</label><br>
+
+        <input type="radio" name="shopping-trips" id="twice" value="twice">
+        <label for="twice">Twice</label><br>
+
+        <input type="radio" name="shopping-trips" id="five-times" value="five-times">
+        <label for="once">5 times</label><br>
+
+        <input type="radio" name="shopping-trips" id="five-ten-times" value="five-ten-times">
+        <label for="five-ten-times">Between 5 and 10 times</label><br>
+
+        <input type="radio" name="shopping-trips" id="more-than-ten-times" value="more-than-ten-times">
+        <label for="more-than-ten-times">More than 10 times</label><br>
+
+        <!-- === Last time customer shopped === -->
+        <label for="dropdown" id="dropdown-label">When was the last time you purchased something from us?</label><br>
+        <select name="dropdown" id="dropdown">
+            <option value="default">Select an option</option>
+            <option value="One week">One week ago</option>
+            <option value="One month">One month ago</option>
+            <option value="Three months">Three months ago</option>
+            <option value="Six months">Six months ago</option>
+            <option value="Over a year">More than a year ago</option>
+        </select><br>
+
+        <!-- === Product availability === -->
+        <div id="product-avail-qn">
+            <p>On your last visit, did you find everything you were looking for?</p><br>
+        </div>
+        <input type="radio" name="product-availability" id="yes" value="yes">
+        <label for="yes">I found everything I was looking for.</label><br>
+
+        <input type="radio" name="product-availability" id="some" value="some">
+        <label for="some">I found some, but not everything.</label><br>
+
+        <input type="radio" name="product-availability" id="nothing" value="nothing">
+        <label for="nothing">I did not find anything I was looking for.</label><br>
+
+        <!-- === Number of items purchased === -->
+
+        <label for="number" id="number-label">How many items did you buy on your last visit?</label>
+        <input type="number" id="number" min="0" max="50" placeholder="Enter number of items" required><br>
+
+        <!-- === Products purchased === -->
+        <div id="products-purchased">
+            <p>Which product(s) did you purchase on your last visit? (Check all that apply)</p>
+        </div>
+
+        <input type="checkbox" id="product1" name="product1" value="spices">
+        <label for="product1">Spices</label><br>
+
+        <input type="checkbox" id="product2" name="product2" value="Corn meal">
+        <label for="product2">Corn meal (mealie-meal)</label><br>
+
+        <input type="checkbox" id="product3" name="product3" value="cereal">
+        <label for="product3">Cereal</label><br>
+
+        <input type="checkbox" id="product4" name="product4" value="Snacks">
+        <label for="product4">Snacks</label><br>
+
+        <input type="checkbox" id="product5" name="product5" value="Meat products">
+        <label for="product5">Meat products</label><br>
+
+        <input type="checkbox" id="product6" name="product6" value="Pies">
+        <label for="product6">Pies</label><br>
+
+        <input type="checkbox" id="product7" name="product7" value="Candy">
+        <label for="product7">Candy</label><br>
+
+        <input type="checkbox" id="product8" name="product8" value="Drinks">
+        <label for="product8">Drinks</label><br>
+
+        <input type="checkbox" id="product9" name="product9" value="jam">
+        <label for="product9">Jam or Peanut butter</label><br>
+
+        <input type="checkbox" id="product10" name="product10" value="Other">
+        <label for="product10">Other</label><br>
+
+        <!-- === Rate customer service === -->
+        <div id="customer-serv-qn">
+            <p>How would you rate our customer service on your last visit?</p>
+        </div>
+
+        <input type="radio" name="customer-service" id="excellent" value="excellent">
+        <label for="excellent">Excellent</label><br>
+
+        <input type="radio" name="customer-service" id="great" value="great">
+        <label for="great">Great</label><br>
+
+        <input type="radio" name="customer-service" id="okay" value="okay">
+        <label for="okay">Okay</label><br>
+
+        <input type="radio" name="customer-service" id="terrible" value="terrible">
+        <label for="terrible">Terrible</label><br>
+
+        <!-- === Shopping method === -->
+        <div id="shopping-method">
+            <p>What's your prefered shopping method?</p>
+        </div>
+
+        <input type="radio" name="shopping-method" id="in-store" value="in-store">
+        <label for="in-store">In-store</label><br>
+
+        <input type="radio" name="shopping-method" id="online" value="online">
+        <label for="online">Online</label><br>
+
+        <input type="radio" name="shopping-method" id="via-whatsapp" value="via-whatsapp">
+        <label for="via-whatsapp">Via WhatsApp</label><br>
+
+        <input type="radio" name="shopping-method" id="over-the-phone" value="over-the-phone">
+        <label for="over-the-phone">Over the Phone</label><br>
+
+        <!-- === Payment method === -->
+
+        <div id="payment-method">
+            <p>What's your prefered payment method(s)? (Check all that apply)</p>
+        </div>
+
+        <input type="checkbox" id="pay-method1" name="pay-method1" value="cash-app">
+        <label for="pay-method1">Cash App</label><br>
+
+        <input type="checkbox" id="pay-method2" name="pay-method2" value="zelle">
+        <label for="pay-method2">Zelle</label><br>
+
+        <input type="checkbox" id="pay-method3" name="pay-method3" value="bank-transfer">
+        <label for="pay-method3">Bank Transfer</label><br>
+
+        <input type="checkbox" id="pay-method4" name="pay-method4" value="cash-or-check">
+        <label for="pay-method4">Cash or Check</label><br>
+
+        <input type="checkbox" id="pay-method5" name="pay-method5" value="apple-cash">
+        <label for="pay-method5">Apple Cash</label><br>
+
+        <input type="checkbox" id="pay-method6" name="pay-method6" value="other">
+        <label for="pay-method6">Other</label><br>
+
+        <!-- === Additional comments and suggestions === -->
+        <div id="comments-suggestions">
+            <p>Any additional comments or suggestions?</p>
+        </div>
+
+        <textarea name="comments-suggestions" id="comments-suggestions" cols="30" rows="10"
+            placeholder="Enter your comments or suggestions here"></textarea><br>
+
+        <!-- === Submit button === -->
+        <input type="submit" id="submit">
+
+
+
+    </form>
+
+</body>
+
+</html>

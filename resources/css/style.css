@@ -1,0 +1,13 @@
+/* ==================== GENERAL STYLES ==================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #555555;
+    font-family: 'Lato', sans-serif;
+    
+}
