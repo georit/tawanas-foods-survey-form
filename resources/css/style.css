@@ -1,13 +1,58 @@
 /* ==================== GENERAL STYLES ==================== */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    color: #555555;
-    font-family: 'Lato', sans-serif;
-    
+  color: #555555;
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(rgba(204, 43, 94, 0.9), rgba(117, 58, 136, 0.9)),
+    url("../images/shopping-bg-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#heading-description {
+  width: 90%;
+  color: #ffffff;
+  margin: 150px auto 100px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+#heading-description::after {
+  content: "";
+  background: #ffffff;
+  height: 3px;
+  width: 10%;
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  right: 45%;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+#description {
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin-top: 5px;
+}
+
+#survey-form {
+  width: 60%;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #c5c5c5;
 }

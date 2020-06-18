@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tawana's Foods | Survey Form</title>
     <!-- ========== FONTS ========== -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap"
         rel="stylesheet">
     <!-- ========== CSS ========== -->
     <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
 <body>
+
     <!-- ============== Heading ============== -->
-    <h1 id="title">Tawana's Foods Customer Satisfaction Survey</h1>
-    <!-- ============== Description ============== -->
-    <p id="description">Thank you for taking the time to help us improve the quality of our service</p>
+    <div id="heading-description">
+        <h1 id="title">Tawana's Foods Customer Satisfaction Survey</h1>
+        <!-- ============== Description ============== -->
+        <p id="description">Thank you for taking the time to help us improve the quality of our service.</p>
+    </div>
+
     <!-- ============== Survey Form ============== -->
     <form action="" id="survey-form">
+
         <!-- === Name === -->
         <label for="name" id="name-label">Name:</label>
         <input type="text" id="name" required placeholder="Enter your name"><br>
@@ -53,7 +59,8 @@
         <label for="more-than-ten-times">More than 10 times</label><br>
 
         <!-- === Last time customer shopped === -->
-        <label for="dropdown" id="dropdown-label">When was the last time you purchased something from us?</label><br>
+        <label for="dropdown" id="dropdown-label">When was the last time you purchased something from
+            us?</label><br>
         <select name="dropdown" id="dropdown">
             <option value="default">Select an option</option>
             <option value="One week">One week ago</option>
@@ -184,8 +191,6 @@
 
         <!-- === Submit button === -->
         <input type="submit" id="submit">
-
-
 
     </form>
 
