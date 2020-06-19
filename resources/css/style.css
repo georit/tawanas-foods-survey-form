@@ -19,7 +19,7 @@ body {
 #heading-description {
   width: 90%;
   color: #ffffff;
-  margin: 100px auto 80px;
+  margin: 80px auto 60px;
   text-align: center;
   position: relative;
   padding-bottom: 30px;
@@ -55,8 +55,11 @@ body {
   margin: 80px auto;
   padding: 20px 0;
   background-color: rgba(255, 255, 255, 0.7);
-  /* padding: 50px; */
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   box-shadow: 0 0 10px #c5c5c5;
   font-size: 1.3rem;
 }
@@ -99,6 +102,10 @@ input[type="tel"] {
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   font-size: 1.2rem;
   font-family: "Lato", sans-serif;
   line-height: 2rem;
@@ -107,6 +114,10 @@ input[type="tel"] {
   margin-top: 10px;
   text-indent: 10px;
   transition: box-shadow 0.2s, transform 0.2s;
+  -webkit-transition: box-shadow 0.2s, transform 0.2s;
+  -moz-transition: box-shadow 0.2s, transform 0.2s;
+  -ms-transition: box-shadow 0.2s, transform 0.2s;
+  -o-transition: box-shadow 0.2s, transform 0.2s;
 }
 
 input[type="text"]:hover,
@@ -119,6 +130,10 @@ input[type="email"]:focus,
 input[type="tel"]:focus {
   box-shadow: 0 0 10px #b1b1b1;
   transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
 }
 
 #dropdown {
@@ -126,6 +141,10 @@ input[type="tel"]:focus {
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   color: #555555;
   font-size: 1.2rem;
   font-family: "Lato", sans-serif;
@@ -138,14 +157,26 @@ input[type="tel"]:focus {
 input[type="checkbox"],
 input[type="radio"] {
   transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
   margin: 10px 10px 0px 2px;
   transition: box-shadow 0.2s, transform 0.2s;
+  -webkit-transition: box-shadow 0.2s, transform 0.2s;
+  -moz-transition: box-shadow 0.2s, transform 0.2s;
+  -ms-transition: box-shadow 0.2s, transform 0.2s;
+  -o-transition: box-shadow 0.2s, transform 0.2s;
 }
 
 input[type="checkbox"]:hover,
 input[type="radio"]:hover {
   box-shadow: 0 0 10px #b1b1b1;
   transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
 }
 
 textarea {
@@ -160,29 +191,47 @@ textarea {
   margin-top: 10px;
   text-indent: 10px;
   transition: box-shadow 0.2s, transform 0.2s;
+  -webkit-transition: box-shadow 0.2s, transform 0.2s;
+  -moz-transition: box-shadow 0.2s, transform 0.2s;
+  -ms-transition: box-shadow 0.2s, transform 0.2s;
+  -o-transition: box-shadow 0.2s, transform 0.2s;
 }
 
 textarea:hover,
 textarea:focus {
   box-shadow: 0 0 10px #b1b1b1;
   transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
 }
 
 #submit {
-  width: 100%;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
   height: 2.5rem;
   background: rgba(204, 43, 94, 0.9);
   border: 1px solid rgba(204, 43, 94, 0.9);
   border-radius: 5px;
   color: #ffffff;
+  cursor: pointer;
   font-size: 1.2rem;
   letter-spacing: 0.05rem;
-  transition: all 0.2s;
-  cursor: pointer;
+  transition: background 0.2s, border 0.2s, transform 0.2s;
+  -webkit-transition: background 0.2s, border 0.2s, transform 0.2s;
+  -moz-transition: background 0.2s, border 0.2s, transform 0.2s;
+  -ms-transition: background 0.2s, border 0.2s, transform 0.2s;
+  -o-transition: background 0.2s, border 0.2s, transform 0.2s;
 }
 
 #submit:hover {
   background: rgb(117, 58, 136, 0.9);
   border: none;
-  transform: scale(1.01);
+  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
 }
