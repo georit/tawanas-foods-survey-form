@@ -19,16 +19,17 @@ body {
 #heading-description {
   width: 90%;
   color: #ffffff;
-  margin: 150px auto 100px;
+  margin: 100px auto 80px;
   text-align: center;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 #heading-description::after {
   content: "";
   background: #ffffff;
-  height: 3px;
+  height: 4px;
+  border-radius: 2px;
   width: 10%;
   position: absolute;
   top: 100%;
@@ -37,22 +38,151 @@ body {
 }
 
 #title {
+  font-family: "Lato", sans-serif;
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
 }
 
 #description {
   font-size: 1.7rem;
   font-weight: 100;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 #survey-form {
   width: 60%;
-  margin: 100px auto;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 50px;
-  border-radius: 30px;
+  margin: 80px auto;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  /* padding: 50px; */
+  border-radius: 10px;
   box-shadow: 0 0 10px #c5c5c5;
+  font-size: 1.3rem;
+}
+
+#name-label,
+#email-label,
+#phone-number-label,
+#dropdown-label,
+#number-label,
+p {
+  font-weight: 700;
+}
+
+span {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.name,
+.email,
+.phone-number,
+.shopping-trips,
+.last-time-shopping,
+.product-avail,
+.num-of-items-purchased,
+.products-purchased,
+.customer-service,
+.shopping-method,
+.payment-method,
+.additional-info,
+.btn-submit {
+  width: 80%;
+  margin: 35px auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  line-height: 2rem;
+  outline: none;
+  width: 100%;
+  margin-top: 10px;
+  text-indent: 10px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  box-shadow: 0 0 10px #b1b1b1;
+  transform: scale(1.01);
+}
+
+#dropdown {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #555555;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  outline: none;
+  height: 2rem;
+  text-indent: 10px;
+  margin-top: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.4);
+  margin: 10px 10px 0px 2px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  box-shadow: 0 0 10px #b1b1b1;
+  transform: scale(1.8);
+}
+
+textarea {
+  height: 10rem;
+  font-size: 1.2rem;
+  font-family: "lato", sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin-top: 10px;
+  text-indent: 10px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+textarea:hover,
+textarea:focus {
+  box-shadow: 0 0 10px #b1b1b1;
+  transform: scale(1.01);
+}
+
+#submit {
+  width: 100%;
+  height: 2.5rem;
+  background: rgba(204, 43, 94, 0.9);
+  border: 1px solid rgba(204, 43, 94, 0.9);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: rgb(117, 58, 136, 0.9);
+  border: none;
+  transform: scale(1.01);
 }
